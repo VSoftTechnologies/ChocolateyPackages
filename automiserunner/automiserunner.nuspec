@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>automisecmd</id>
+    <title>Automise Runner</title>
+    <version>4.0.0.852</version>
+    <authors>VSoft Technologies Pty. Ltd.</authors>
+    <owners>VSoft</owners>
+    <summary>Automise Runner provides the GUI line runner for [Automise](https://chocolatey.org/packages/automise).</summary>
+    <description>
+Automise Runner provides the GUI line runner for [Automise](https://chocolatey.org/packages/automise). 
+
+The package will download and install Automise with the default settings. A 30 day trail is included for each new installation after which a licence is required from our [store](https://www.finalbuilder.com/store).
+
+###Built In Actions
+Over 350 actions are included for common Windows tasks. Notiable groups of these actions include;
+
+ * Logic - If..Then, Try..Catch..Finally, Switch, While, Iterator, and Async
+ * File &amp; directory - Search, Read, Update, and Delete
+ * Text file - Search, Replace, Create, Read, Update, and Delete
+ * Database - ADO Execute SQL, Stored Procedure, Backup
+ * Notification - Email (SMTP), MSN, ICQ, and Telnet
+ * Execution - Command line, PowerShell, Remote Execution, and PSTools 
+ * Software Maintenance - Install, Uninstall, Reinstall, MSI
+ * Media - CD/DVD/Bluray
+ * Upload &amp; download -  Web Deploy, EC2, IIS, FTP, and SFTP
+ * Configuration - Active Directory, .Net, HyperV, VWWare, XML, Windows OS, and IIS
+
+###Custom Scripting
+All actions provide customisation through settings as well as scripting events. These events allow custom scripted behavior to be performed. Supported languages for scripts are JScript, VBScript, PowerShell, and IronPython.
+
+###Custom Actions - Action Studio
+Custom actions are used for large or complex custom scripting requirements. These custom actions can be backed by scripting logic or C# implementations. Custom action styles that can be written include;
+
+ * Standard Actions - Simple actions that don't call an external tool. 
+ * Execute Actions - Actions that call an external tool to perform the desired task. 
+ * Iterator Actions - Tasks that require their repetition to be simplified in builds.
+</description>
+    <releaseNotes>
+Release notes are located at [Automise Version History](https://www.finalbuilder.com/downloads/automise/automise-4-version-history)
+    </releaseNotes>
+    <projectUrl>https://www.finalbuilder.com/automise</projectUrl>
+    <tags>automise administration automation cmd CLI</tags>
+    <copyright>VSoft Technologies Pty. Ltd. 1997-Present</copyright>
+    <licenseUrl>https://www.finalbuilder.com/finalbuilder/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>https://cdn.rawgit.com/VSoftTechnologies/cdn-images/v8/Automise-Icon-256.png</iconUrl>-->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
