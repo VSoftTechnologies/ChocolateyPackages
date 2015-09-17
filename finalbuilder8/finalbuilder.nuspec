@@ -4,7 +4,7 @@
   <metadata>
     <id>finalbuilder</id>
     <title>FinalBuilder (Install)</title>
-    <version>8.0.0.1129</version>
+    <version>%PRODUCT_VERSION%</version>
     <authors>VSoft Technologies Pty. Ltd.</authors>
     <owners>VSoft</owners>
     <summary>FinalBuilder provides a graphical IDE to create, debug, and run software build projects. FinalBuilder includes many actions to perform tasks at all stages of the continuious software delivery cycle.</summary>
@@ -39,7 +39,7 @@ Custom actions are used for large or complex custom scripting requirements. Thes
       Release notes are located at [FinalBuilder Version History](https://www.finalbuilder.com/downloads/finalBuilder/finalbuilder-8-version-history)
     </releaseNotes>
     <projectUrl>https://www.finalbuilder.com/finalbuilder</projectUrl>
-    <tags>finalbuilder automation IDE build cmd CLI trail</tags>
+    <tags>finalbuilder automation IDE build cmd CLI trial</tags>
     <copyright>VSoft Technologies Pty. Ltd. 1997-Present</copyright>
     <licenseUrl>https://www.finalbuilder.com/finalbuilder/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

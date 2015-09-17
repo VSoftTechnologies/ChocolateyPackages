@@ -1,0 +1,150 @@
+﻿project
+begin
+  projectid = {8C47B98D-554F-4291-A729-E0C516A70AB5}
+  target
+  begin
+    name = Default
+    targetid = {E090EC4D-ACB0-4D01-8204-D3D76F44877B}
+    rootaction
+    begin
+      action.comment
+      begin
+        actiontextcolor = 16711680
+        description = "Update the version number"
+        id = {11EAD0F0-96EC-4355-9092-DACF9193EC28}
+      end
+      action.text.findreplace
+      begin
+        casesensitive = true
+        expandvarswhenreplacing = true
+        failmatchcount = 1
+        failonmorematchcount = 1
+        filesetcountallmatches = false
+        id = {7A258BCC-ED88-44B6-B838-A6214B978D0C}
+        matchregexpr = false
+        matchtype = mtAll
+        matchwildcards = false
+        replacementmode = trOriginalFile
+        replacementtext = %ProductVersion%
+        searchstring = %%PRODUCT_VERSION%%
+        sourcepath = %ProductDir%%Product%.nuspec
+        substitute = false
+        textfindbehaviour = tfFailOnLess
+        usefileset = false
+        usevariable = false
+        wholelinesonly = false
+        wholewords = false
+        writebom = true
+      end
+      action.text.findreplace
+      begin
+        casesensitive = true
+        expandvarswhenreplacing = true
+        failmatchcount = 1
+        failonmorematchcount = 1
+        filesetcountallmatches = false
+        id = {534FC485-40DD-4AFE-AB5E-E923D45A6EEE}
+        matchregexpr = false
+        matchtype = mtAll
+        matchwildcards = false
+        replacementmode = trOriginalFile
+        replacementtext = %ProductDownloadUrl%
+        searchstring = %%PRODUCT_DOWNLOAD_URL%%
+        sourcepath = %ProductDir%tools\\chocolateyinstall.ps1
+        substitute = false
+        textfindbehaviour = tfFailOnLess
+        usefileset = false
+        usevariable = false
+        wholelinesonly = false
+        wholewords = false
+        writebom = true
+      end
+      action.chocolatey.pack
+      begin
+        actiontypeid = {1305C24F-92F3-4D37-A4AC-FC3DEFF59488}
+        customactionname = "Chocolatey Pack"
+        enabletimeout = false
+        id = {9D3EDFF9-45A8-47CE-83A8-7DDB6C1B1DCB}
+        impersonateusenetcredonly = false
+        impersonateuser = false
+        terminateontimeout = true
+        timeoutlength = 2
+        as.pathtonuspec = %ProductDir%finalbuilder.nuspec
+        as.version = %ProductVersion%
+        as.loglevel = Normal
+        as.limitoutput = False
+        as.executiontimeout = 0
+        as.acceptlicense = False
+        as.force = False
+        as.whatif = False
+        as.allowunofficial = False
+      end
+      action.comment
+      begin
+        actiontextcolor = 16711680
+        description = "Pack the nuspec"
+        id = {B288E306-FFAC-4153-B6FC-A39C3641748D}
+      end
+      action.chocolatey.push
+      begin
+        actiontypeid = {6A109217-D419-43A9-872C-279EAEC8EC86}
+        customactionname = "Chocolatey Push"
+        enabletimeout = false
+        id = {3341E440-639E-4E0E-95E5-3E3E1D898E6C}
+        impersonateusenetcredonly = false
+        impersonateuser = false
+        terminateontimeout = true
+        timeoutlength = 2
+        as.pathtonupkg = %ProductDir%finalbuilder.%ProductVersion%.nupkg
+        as.apikey = %ChocoAPIKey%
+        as.loglevel = Normal
+        as.limitoutput = False
+        as.executiontimeout = 0
+        as.acceptlicense = False
+        as.force = False
+        as.whatif = False
+        as.allowunofficial = False
+      end
+    end
+  end
+  variable
+  begin
+    name = ChocoAPIKey
+    variablescope = vtProject
+    variabletype = btString
+  end
+  variable
+  begin
+    defaultvalue = FinalBuilder
+    name = Product
+    variablescope = vtProject
+    variabletype = btString
+  end
+  variable
+  begin
+    defaultvalue = %FBPROJECTDIR%\\..\\%Product%%ProductMajorVer%\\
+    ismacro = true
+    name = ProductDir
+    variablescope = vtProject
+    variabletype = btString
+  end
+  variable
+  begin
+    defaultvalue = http://downloads.finalbuilder.com/downloads/finalbuilder/800/FB800_1129.exe
+    name = ProductDownloadUrl
+    variablescope = vtProject
+  end
+  variable
+  begin
+    defaultvalue = 8
+    name = ProductMajorVer
+    variablescope = vtProject
+  end
+  variable
+  begin
+    defaultvalue = 8.0.0.1129
+    name = ProductVersion
+    variablescope = vtProject
+    variabletype = btString
+  end
+end
