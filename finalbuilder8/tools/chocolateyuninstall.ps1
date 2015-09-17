@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'; #Stop on all errors
 
 $packageName = 'finalbuilder' #Unique name of the package
-$registryUninstallerKeyName = '{4594DEE8-EFDC-4F16-A6DC-8FEAD022DC08}_is1' #The uninstall registry key for our application. Defined and setup by the installer exe.
+$registryUninstallerKeyName = '{62D2B81F-145D-4926-A198-449B18290ABD}_is1' #The uninstall registry key for our application. Defined and setup by the installer exe.
 $installerType = 'EXE' #Our uninstaller is also an executable
 $silentArgs = '/SILENT /VERYSILENT /SUPPRESSMSGBOXES' #Silent arguments to make the uninstaller not show any GUI
 $validExitCodes = @(0) #Valid return codes from the uninstaller for success

@@ -36,7 +36,7 @@ Custom actions are used for large or complex custom scripting requirements. Thes
  * Iterator Actions - Tasks that require their repetition to be simplified in builds.
 </description>
     <releaseNotes>
-Release notes are located at [FinalBuilder Version History](https://www.finalbuilder.com/downloads/finalBuilder/finalbuilder-7-version-history)
+      Release notes are located at [FinalBuilder Version History](https://www.finalbuilder.com/downloads/finalBuilder/finalbuilder-8-version-history)
     </releaseNotes>
     <projectUrl>https://www.finalbuilder.com/finalbuilder</projectUrl>
     <tags>finalbuilder automation IDE build cmd CLI trail</tags>
