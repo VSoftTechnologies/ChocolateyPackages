@@ -4,7 +4,7 @@
   <metadata>
     <id>finalbuilder</id>
     <title>FinalBuilder (Install)</title>
-    <version>7.0.0.3450</version>
+    <version>%PRODUCT_VERSION%</version>
     <authors>VSoft Technologies Pty. Ltd.</authors>
     <owners>VSoft</owners>
     <summary>FinalBuilder provides a graphical IDE to create, debug, and run software build projects. FinalBuilder includes many actions to perform tasks at all stages of the continuious software delivery cycle.</summary>
