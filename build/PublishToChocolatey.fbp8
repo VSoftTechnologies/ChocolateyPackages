@@ -1,6 +1,6 @@
 ﻿project
 begin
-  projectid = {8C47B98D-554F-4291-A729-E0C516A70AB5}
+  projectid = {6AB87057-58A4-42B7-AC5A-412DBFCCD5A0}
   target
   begin
     name = Default
@@ -70,6 +70,7 @@ begin
         terminateontimeout = true
         timeoutlength = 2
         as.pathtonuspec = %ProductDir%finalbuilder.nuspec
+        as.outputdirectory = %ProductDir%
         as.version = %ProductVersion%
         as.loglevel = Normal
         as.limitoutput = False
@@ -130,7 +131,7 @@ begin
   end
   variable
   begin
-    defaultvalue = http://downloads.finalbuilder.com/downloads/finalbuilder/800/FB800_1129.exe
+    defaultvalue = http://downloads.finalbuilder.com/downloads/finalbuilder/800/FB800_1221.exe
     name = ProductDownloadUrl
     variablescope = vtProject
   end
@@ -142,7 +143,7 @@ begin
   end
   variable
   begin
-    defaultvalue = 8.0.0.1129
+    defaultvalue = 8.0.0.1221
     name = ProductVersion
     variablescope = vtProject
     variabletype = btString
