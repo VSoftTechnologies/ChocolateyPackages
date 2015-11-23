@@ -9,32 +9,32 @@
     <owners>VSoft</owners>
     <summary>FinalBuilder provides a graphical IDE to create, debug, and run software build projects. FinalBuilder includes many actions to perform tasks at all stages of the continuious software delivery cycle.</summary>
     <description>
-FinalBuilder provides a graphical IDE and command line to create, debug, and run software build projects. FinalBuilder includes many actions to perform tasks at all stages of the continuious software delivery cycle.
+FinalBuilder provides a graphical IDE and command line to create, debug, and run software build projects. FinalBuilder includes many actions to perform tasks at all stages of the continuous software delivery cycle.
 
-The package will download and install FinalBuilder with the default settings. Obtaining a 30 day trail licene for each new installation is required. After the trial period a full licence is required from our [store] (https://www.finalbuilder.com/store).
+The package will download and install FinalBuilder with the default settings. Obtaining a 30 day trail license for each new installation is required. After the trial period a full licence is required from our [store] (https://www.finalbuilder.com/store).
 
 ###Built In Actions
 Over 700 actions are included for common software delivery tasks. Notiable groups of these actions include;
 
- * Build logic - If..Then, Try..Catch..Finally, Switch, While, Iterator, and Async
- * Version control - AccuRev, CVS, Git, ClearCase, JediVCS, Mercurial, TFS, Plastic SCM, PureCM, Perforce, QVCS, Subversion, Surround, and Sourcegear Vault
- * Compilers - Visual Studio .Net, Delphi, Java, and Visual Basic
- * Build - Ant, NAnt, MSBuild, and Maven
- * Testing - NUnit, MbUnit, MSTest\VSTest, TestComplete, AQTest, and Typemock
- * Installer - InnoSetup, InstallAware, Wise, InstallAnywhere, GP Install, NullSoft, InstallShield, Advanced Installer, Setup Factory, Wix, and MSI
- * Deployment -  Web Deploy, EC2, IIS, FTP, and SFTP
- * Configuration - .Net, HyperV, VWWare, XML, Windows OS, and IIS
+* Build logic - If..Then, Try..Catch..Finally, Switch, While, Iterator, and Async
+* Version control - AccuRev, CVS, Git, ClearCase, JediVCS, Mercurial, TFS, Plastic SCM, PureCM, Perforce, QVCS, Subversion, Surround, and Sourcegear Vault
+* Compilers - Visual Studio .Net, Delphi, Java, and Visual Basic
+* Build - Ant, NAnt, MSBuild, and Maven
+* Testing - NUnit, MbUnit, MSTest\VSTest, TestComplete, AQTest, and Typemock
+* Installer - InnoSetup, InstallAware, Wise, InstallAnywhere, GP Install, NullSoft, InstallShield, Advanced Installer, Setup Factory, Wix, and MSI
+* Deployment -  Web Deploy, EC2, IIS, FTP, and SFTP
+* Configuration - .Net, HyperV, VWWare, XML, Windows OS, and IIS
 
 ###Custom Scripting
-All actions provide customisation through settings as well as scripting events. These events allow custom scripted behavior to be performed. Supported languages for scripts are JScript, VBScript, PowerShell, and IronPython.
+All actions provide customisation through settings as well as scripting events. These events allow custom scripted behaviour to be performed. Supported languages for scripts are JScript, VBScript, PowerShell, and IronPython.
 
 ###Custom Actions - Action Studio
 Custom actions are used for large or complex custom scripting requirements. These custom actions can be backed by scripting logic or C# implementations. Custom action styles that can be written include;
 
- * Standard Actions - Simple actions that don't call an external tool. 
- * Execute Actions - Actions that call an external tool to perform the desired task. 
- * Iterator Actions - Tasks that require their repetition to be simplified in builds.
-</description>
+* Standard Actions - Simple actions that don't call an external tool.
+* Execute Actions - Actions that call an external tool to perform the desired task.
+* Iterator Actions - Tasks that require their repetition to be simplified in builds.
+	</description>
     <releaseNotes>
       Release notes are located at [FinalBuilder Version History](https://www.finalbuilder.com/downloads/finalBuilder/finalbuilder-8-version-history)
     </releaseNotes>
