@@ -90,7 +90,6 @@ begin
       begin
         actiontypeid = {6A109217-D419-43A9-872C-279EAEC8EC86}
         customactionname = "Chocolatey Push"
-        enabled = false
         enabletimeout = false
         id = {3341E440-639E-4E0E-95E5-3E3E1D898E6C}
         impersonateusenetcredonly = false
