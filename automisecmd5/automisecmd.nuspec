@@ -2,14 +2,14 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>automise</id>
-    <title>Automise (Install)</title>
-    <version>%PRODUCT_VERSION%</version>
+    <id>automisecmd</id>
+    <title>Automise CMD</title>
+    <version>4.0.0.852</version>
     <authors>VSoft Technologies Pty. Ltd.</authors>
     <owners>VSoft</owners>
-    <summary>Automise provides a graphical IDE to create, debug, and run Windows administrative tasks. Automise packages hundreds of pre-written scripts into a drag-and-drop graphical interface. These projects can then be run from the command line.</summary>
+    <summary>Automise CMD provides the command line runner for [Automise](https://chocolatey.org/packages/automise).</summary>
     <description>
-Automise provides a graphical IDE and command line to create, debug, and run Windows administrative tasks. Automise includes many actions to perform common Windows administration tasks.
+Automise CMD provides the command line runner for [Automise](https://chocolatey.org/packages/automise). 
 
 The package will download and install Automise with the default settings. A 30 day trail is included for each new installation after which a licence is required from our [store](https://www.finalbuilder.com/store).
 
@@ -38,10 +38,10 @@ Custom actions are used for large or complex custom scripting requirements. Thes
  * Iterator Actions - Tasks that require their repetition to be simplified in builds.
 </description>
     <releaseNotes>
-Release notes are located at [Automise Version History](https://www.finalbuilder.com/downloads/automise/automise-5-version-history)
+Release notes are located at [Automise Version History](https://www.finalbuilder.com/downloads/automise/automise-4-version-history)
     </releaseNotes>
     <projectUrl>https://www.finalbuilder.com/automise</projectUrl>
-    <tags>automise administration automation IDE cmd CLI</tags>
+    <tags>automise administration automation cmd CLI</tags>
     <copyright>VSoft Technologies Pty. Ltd. 1997-Present</copyright>
     <licenseUrl>https://www.finalbuilder.com/finalbuilder/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

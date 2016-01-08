@@ -9,7 +9,7 @@ begin
     begin
       action.comment
       begin
-        actiontextcolor = 16711680
+        actiontextcolor = 8421376
         description = "Update the version number"
         id = {11EAD0F0-96EC-4355-9092-DACF9193EC28}
       end
@@ -69,7 +69,7 @@ begin
         impersonateuser = false
         terminateontimeout = true
         timeoutlength = 2
-        as.pathtonuspec = %ProductDir%finalbuilder.nuspec
+        as.pathtonuspec = %ProductDir%%Product%.nuspec
         as.outputdirectory = %ProductDir%
         as.version = %ProductVersion%
         as.loglevel = Normal
@@ -82,7 +82,7 @@ begin
       end
       action.comment
       begin
-        actiontextcolor = 16711680
+        actiontextcolor = 8421376
         description = "Pack the nuspec"
         id = {B288E306-FFAC-4153-B6FC-A39C3641748D}
       end
@@ -90,6 +90,7 @@ begin
       begin
         actiontypeid = {6A109217-D419-43A9-872C-279EAEC8EC86}
         customactionname = "Chocolatey Push"
+        enabled = false
         enabletimeout = false
         id = {3341E440-639E-4E0E-95E5-3E3E1D898E6C}
         impersonateusenetcredonly = false
@@ -116,7 +117,7 @@ begin
   end
   variable
   begin
-    defaultvalue = FinalBuilder
+    defaultvalue = Automise
     name = Product
     variablescope = vtProject
     variabletype = btString
@@ -137,13 +138,13 @@ begin
   end
   variable
   begin
-    defaultvalue = 8
+    defaultvalue = 5
     name = ProductMajorVer
     variablescope = vtProject
   end
   variable
   begin
-    defaultvalue = 8.0.0.1221
+    defaultvalue = 5.0.0.268
     name = ProductVersion
     variablescope = vtProject
     variabletype = btString
