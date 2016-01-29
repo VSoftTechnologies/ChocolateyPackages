@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'; #Stop on all errors
 
 $packageName = 'automise' #Unique name of the package
-$registryUninstallerKeyName = '{F728B6D7-2298-418C-8BF2-96C41C962663}_is1' #The uninstall registry key for our application. Defined and setup by the installer exe.
+$registryUninstallerKeyName = '{9A60B92A-77EC-44E5-8DC9-4F63798010E8}_is1' #The uninstall registry key for our application. Defined and setup by the installer exe.
 $installerType = 'EXE' #Our uninstaller is also an executable
 $silentArgs = '/SILENT /VERYSILENT /SUPPRESSMSGBOXES' #Silent arguments to make the uninstaller not show any GUI
 $validExitCodes = @(0) #Valid return codes from the uninstaller for success

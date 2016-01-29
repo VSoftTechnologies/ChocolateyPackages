@@ -4,7 +4,7 @@
   <metadata>
     <id>automisecmd</id>
     <title>Automise Runner</title>
-    <version>4.0.0.852</version>
+    <version>%PRODUCT_VERSION%-beta</version>
     <authors>VSoft Technologies Pty. Ltd.</authors>
     <owners>VSoft</owners>
     <summary>Automise Runner provides the GUI line runner for [Automise](https://chocolatey.org/packages/automise).</summary>
@@ -38,7 +38,7 @@ Custom actions are used for large or complex custom scripting requirements. Thes
  * Iterator Actions - Tasks that require their repetition to be simplified in builds.
 </description>
     <releaseNotes>
-Release notes are located at [Automise Version History](https://www.finalbuilder.com/downloads/automise/automise-4-version-history)
+Release notes are located at [Automise Version History](https://www.finalbuilder.com/downloads/automise/automise-5-version-history)
     </releaseNotes>
     <projectUrl>https://www.finalbuilder.com/automise</projectUrl>
     <tags>automise administration automation cmd CLI</tags>
