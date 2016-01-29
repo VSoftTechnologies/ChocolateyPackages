@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'; #Stop on all errors
 
-$packageName = 'automisecmd' #Unique name of the package
+$packageName = 'automiseruntime' #Unique name of the package
 $registryUninstallerKeyName = '{351EE16B-6880-42F2-B212-ED860D636803}_is1' #The uninstall registry key for our application. Defined and setup by the installer exe.
 $installerType = 'EXE' #Our uninstaller is also an executable
 $silentArgs = '/SILENT /VERYSILENT /SUPPRESSMSGBOXES' #Silent arguments to make the uninstaller not show any GUI
