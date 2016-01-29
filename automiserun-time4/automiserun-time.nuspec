@@ -4,7 +4,7 @@
   <metadata>
     <id>automisecmd</id>
     <title>Automise CMD</title>
-    <version>4.0.0.852</version>
+    <version>%PRODUCT_VERSION%</version>
     <authors>VSoft Technologies Pty. Ltd.</authors>
     <owners>VSoft</owners>
     <summary>Automise CMD provides the command line runner for [Automise](https://chocolatey.org/packages/automise).</summary>

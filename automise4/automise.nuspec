@@ -38,7 +38,7 @@ Custom actions are used for large or complex custom scripting requirements. Thes
  * Iterator Actions - Tasks that require their repetition to be simplified in builds.
 </description>
     <releaseNotes>
-Release notes are located at [Automise Version History](https://www.finalbuilder.com/downloads/automise/automise-5-version-history)
+Release notes are located at [Automise Version History](https://www.finalbuilder.com/downloads/automise/automise-4-version-history)
     </releaseNotes>
     <projectUrl>https://www.finalbuilder.com/automise</projectUrl>
     <tags>automise administration automation IDE cmd CLI</tags>
