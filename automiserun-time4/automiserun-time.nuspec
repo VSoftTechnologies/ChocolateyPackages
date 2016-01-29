@@ -7,9 +7,9 @@
     <title>Automise Run-time (Install)</title>
     <authors>VSoft Technologies Pty. Ltd.</authors>
     <owners>VSoft</owners>
-    <summary>Automise CMD provides the command line runner for [Automise](https://chocolatey.org/packages/automise).</summary>
+    <summary>Automise Runtime provides the command line runner for [Automise](https://chocolatey.org/packages/automise).</summary>
     <description>
-Automise CMD provides the command line runner for [Automise](https://chocolatey.org/packages/automise). 
+Automise Runtime provides the command line runner for [Automise](https://chocolatey.org/packages/automise). 
 
 The package will download and install Automise with the default settings. A 30 day trail is included for each new installation after which a licence is required from our [store](https://www.finalbuilder.com/store).
 
