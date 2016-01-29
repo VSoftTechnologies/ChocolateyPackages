@@ -3,8 +3,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>automisecmd</id>
-    <title>Automise CMD</title>
     <version>%PRODUCT_VERSION%</version>
+    <title>Automise CMD (Install)</title>
     <authors>VSoft Technologies Pty. Ltd.</authors>
     <owners>VSoft</owners>
     <summary>Automise CMD provides the command line runner for [Automise](https://chocolatey.org/packages/automise).</summary>

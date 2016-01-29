@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>automisecmd</id>
-    <title>Automise CMD</title>
+    <title>Automise CMD (Install)</title>
     <version>%PRODUCT_VERSION%-beta</version>
     <authors>VSoft Technologies Pty. Ltd.</authors>
     <owners>VSoft</owners>
