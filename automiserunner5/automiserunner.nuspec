@@ -4,7 +4,7 @@
   <metadata>
     <id>automiserunner</id>
     <title>Automise Runner (Install)</title>
-    <version>%PRODUCT_VERSION%-beta</version>
+    <version>%PRODUCT_VERSION%</version>
     <authors>VSoft Technologies Pty. Ltd.</authors>
     <owners>VSoft</owners>
     <summary>Automise Runner provides the GUI line runner for [Automise](https://chocolatey.org/packages/automise).</summary>

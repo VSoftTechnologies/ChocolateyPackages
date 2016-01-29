@@ -4,7 +4,7 @@
   <metadata>
     <id>automise</id>
     <title>Automise (Install)</title>
-    <version>%PRODUCT_VERSION%-beta</version>
+    <version>%PRODUCT_VERSION%</version>
     <authors>VSoft Technologies Pty. Ltd.</authors>
     <owners>VSoft</owners>
     <summary>Automise provides a graphical IDE to create, debug, and run Windows administrative tasks. Automise packages hundreds of pre-written scripts into a drag-and-drop graphical interface. These projects can then be run from the command line.</summary>

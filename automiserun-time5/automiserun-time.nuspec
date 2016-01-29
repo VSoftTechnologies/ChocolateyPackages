@@ -4,7 +4,7 @@
   <metadata>
     <id>automiseruntime</id>
     <title>Automise Run-time (Install)</title>
-    <version>%PRODUCT_VERSION%-beta</version>
+    <version>%PRODUCT_VERSION%</version>
     <authors>VSoft Technologies Pty. Ltd.</authors>
     <owners>VSoft</owners>
     <summary>Automise Run-time provides the command line runner for [Automise](https://chocolatey.org/packages/automise).</summary>
