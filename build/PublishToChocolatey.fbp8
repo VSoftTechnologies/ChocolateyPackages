@@ -103,25 +103,69 @@ begin
         description = "Pack the nuspec"
         id = {B288E306-FFAC-4153-B6FC-A39C3641748D}
       end
-      action.chocolatey.push
+      action.string.replace
       begin
-        actiontypeid = {6A109217-D419-43A9-872C-279EAEC8EC86}
-        customactionname = "Chocolatey Push"
+        actiontypeid = {78526C82-A8E7-42B3-8C9D-1E229C79D915}
+        customactionname = "String Replace"
         enabletimeout = false
-        id = {3341E440-639E-4E0E-95E5-3E3E1D898E6C}
+        id = {2A8D41C2-5899-4476-A01E-AEAA06CF3272}
         impersonateusenetcredonly = false
         impersonateuser = false
         terminateontimeout = true
         timeoutlength = 2
-        as.pathtonupkg = %ProductDir%%Product%.%ProductVersion%.nupkg
-        as.apikey = %ChocoAPIKey%
-        as.loglevel = Normal
-        as.limitoutput = False
-        as.executiontimeout = 0
-        as.acceptlicense = False
-        as.force = False
-        as.whatif = False
-        as.allowunofficial = False
+        as.applytoinput = True
+        as.usinginputvariable = True
+        as.inputvariable = Product
+        as.searchstring = " "
+        as.casesensitive = True
+        as.replaceall = False
+      end
+      action.group
+      begin
+        id = {12C9EAF3-5456-4F6E-BF87-E134277D2ED1}
+        variable
+        begin
+          name = L_Product
+          variablescope = vtLocal
+        end
+        action.string.replace
+        begin
+          actiontypeid = {78526C82-A8E7-42B3-8C9D-1E229C79D915}
+          customactionname = "String Replace"
+          enabletimeout = false
+          id = {FD431443-C15D-461E-8D8C-189ED4A1C1FE}
+          impersonateusenetcredonly = false
+          impersonateuser = false
+          terminateontimeout = true
+          timeoutlength = 2
+          as.applytoinput = False
+          as.usinginputvariable = True
+          as.outputvariable = L_Product
+          as.inputvariable = Product
+          as.searchstring = -
+          as.casesensitive = True
+          as.replaceall = False
+        end
+        action.chocolatey.push
+        begin
+          actiontypeid = {6A109217-D419-43A9-872C-279EAEC8EC86}
+          customactionname = "Chocolatey Push"
+          enabletimeout = false
+          id = {3341E440-639E-4E0E-95E5-3E3E1D898E6C}
+          impersonateusenetcredonly = false
+          impersonateuser = false
+          terminateontimeout = true
+          timeoutlength = 2
+          as.pathtonupkg = %ProductDir%%L_Product%.%ProductVersion%.nupkg
+          as.apikey = %ChocoAPIKey%
+          as.loglevel = Normal
+          as.limitoutput = False
+          as.executiontimeout = 0
+          as.acceptlicense = False
+          as.force = False
+          as.whatif = False
+          as.allowunofficial = False
+        end
       end
     end
   end
@@ -133,7 +177,7 @@ begin
   end
   variable
   begin
-    defaultvalue = Automise
+    defaultvalue = "Automise Run-time"
     name = Product
     variablescope = vtProject
     variabletype = btString
@@ -148,7 +192,7 @@ begin
   end
   variable
   begin
-    defaultvalue = http://downloads.finalbuilder.com/downloads/finalbuilder/800/FB800_1221.exe
+    defaultvalue = http://downloads.finalbuilder.com/downloads/automise/500/ATCMD500_313.exe
     name = ProductDownloadUrl
     variablescope = vtProject
   end
@@ -160,7 +204,7 @@ begin
   end
   variable
   begin
-    defaultvalue = 5.0.0.268
+    defaultvalue = 5.0.0.313
     name = ProductVersion
     variablescope = vtProject
     variabletype = btString
