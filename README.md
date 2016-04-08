@@ -12,6 +12,3 @@ To upgrade use the command:
 
 ```
 choco upgrade finalbuilder
-```
-
-[![Chocolatey](https://img.shields.io/chocolatey/dt/scriptcs.svg?style=plastic)](https://chocolatey.org/packages/finalbuilder/8.0.0.1520)
