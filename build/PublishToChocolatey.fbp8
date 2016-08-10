@@ -11,8 +11,27 @@ begin
       begin
         actiontypeid = {78526C82-A8E7-42B3-8C9D-1E229C79D915}
         customactionname = "String Replace"
+        enabled = false
         enabletimeout = false
         id = {B820AE06-06ED-49A1-B28D-040C1B12C574}
+        impersonateusenetcredonly = false
+        impersonateuser = false
+        terminateontimeout = true
+        timeoutlength = 2
+        as.applytoinput = True
+        as.usinginputvariable = True
+        as.inputvariable = Product
+        as.searchstring = " "
+        as.casesensitive = True
+        as.replaceall = True
+      end
+      action.string.replace
+      begin
+        actiontypeid = {78526C82-A8E7-42B3-8C9D-1E229C79D915}
+        customactionname = "String Replace"
+        description = "String Replace - Remove spaces from Product name"
+        enabletimeout = false
+        id = {21E8E54A-EBE8-414C-9766-520035383991}
         impersonateusenetcredonly = false
         impersonateuser = false
         terminateontimeout = true
@@ -27,7 +46,7 @@ begin
       action.comment
       begin
         actiontextcolor = 8421376
-        description = "Update the version number"
+        description = "Update the version number and checksum"
         id = {11EAD0F0-96EC-4355-9092-DACF9193EC28}
       end
       action.text.findreplace
@@ -76,6 +95,35 @@ begin
         wholewords = false
         writebom = true
       end
+      action.text.findreplace
+      begin
+        casesensitive = true
+        expandvarswhenreplacing = true
+        failmatchcount = 1
+        failonmorematchcount = 1
+        filesetcountallmatches = false
+        id = {3BDD13E9-F144-4E92-AAF5-9DC4306E8A27}
+        matchregexpr = false
+        matchtype = mtAll
+        matchwildcards = false
+        replacementmode = trOriginalFile
+        replacementtext = %ProductSHA265Checksum%
+        searchstring = %%RELEASE_SHA256_CHECKSUM%%
+        sourcepath = %ProductDir%tools\\chocolateyinstall.ps1
+        substitute = false
+        textfindbehaviour = tfFailOnLess
+        usefileset = false
+        usevariable = false
+        wholelinesonly = false
+        wholewords = false
+        writebom = true
+      end
+      action.comment
+      begin
+        actiontextcolor = 8421376
+        description = "Pack the nuspec"
+        id = {B288E306-FFAC-4153-B6FC-A39C3641748D}
+      end
       action.chocolatey.pack
       begin
         actiontypeid = {1305C24F-92F3-4D37-A4AC-FC3DEFF59488}
@@ -97,29 +145,6 @@ begin
         as.whatif = False
         as.allowunofficial = False
       end
-      action.comment
-      begin
-        actiontextcolor = 8421376
-        description = "Pack the nuspec"
-        id = {B288E306-FFAC-4153-B6FC-A39C3641748D}
-      end
-      action.string.replace
-      begin
-        actiontypeid = {78526C82-A8E7-42B3-8C9D-1E229C79D915}
-        customactionname = "String Replace"
-        enabletimeout = false
-        id = {2A8D41C2-5899-4476-A01E-AEAA06CF3272}
-        impersonateusenetcredonly = false
-        impersonateuser = false
-        terminateontimeout = true
-        timeoutlength = 2
-        as.applytoinput = True
-        as.usinginputvariable = True
-        as.inputvariable = Product
-        as.searchstring = " "
-        as.casesensitive = True
-        as.replaceall = False
-      end
       action.group
       begin
         id = {12C9EAF3-5456-4F6E-BF87-E134277D2ED1}
@@ -128,10 +153,17 @@ begin
           name = L_Product
           variablescope = vtLocal
         end
+        action.comment
+        begin
+          actiontextcolor = 8421376
+          description = "Publish the package"
+          id = {C6AB4D05-C64A-492F-AF86-C3002573D5B8}
+        end
         action.string.replace
         begin
           actiontypeid = {78526C82-A8E7-42B3-8C9D-1E229C79D915}
           customactionname = "String Replace"
+          description = "String Replace - Remove dash from Product name"
           enabletimeout = false
           id = {FD431443-C15D-461E-8D8C-189ED4A1C1FE}
           impersonateusenetcredonly = false
@@ -201,6 +233,12 @@ begin
     defaultvalue = 5
     name = ProductMajorVer
     variablescope = vtProject
+  end
+  variable
+  begin
+    name = ProductSHA265Checksum
+    variablescope = vtProject
+    variabletype = btString
   end
   variable
   begin

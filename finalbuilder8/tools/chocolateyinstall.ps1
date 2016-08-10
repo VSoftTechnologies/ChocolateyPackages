@@ -6,7 +6,7 @@ $url = '%PRODUCT_DOWNLOAD_URL%' #URL to download installer for current version.
 $url64 = ''
 $silentArgs = '/SP /VERYSILENT /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS' #Silent install arguments for our installer
 $validExitCodes = @(0) #Valid return codes from the installer for success
-$checksum = __ReleaseSHA256CheckSum__
+$checksum = %RELEASE_SHA256_CHECKSUM%
 
 $packageArgs = @{
   packageName   = $packageName
