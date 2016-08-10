@@ -12,4 +12,3 @@ To upgrade use the command:
 
 ```
 choco upgrade finalbuilder
-```
