@@ -7,23 +7,20 @@ begin
     targetid = {E090EC4D-ACB0-4D01-8204-D3D76F44877B}
     rootaction
     begin
-      action.string.replace
+      action.checksum.run
       begin
-        actiontypeid = {78526C82-A8E7-42B3-8C9D-1E229C79D915}
-        customactionname = "String Replace"
-        enabled = false
+        actiontypeid = {E456ADE3-6796-4FE6-BA6A-0872AB3EFABA}
+        customactionname = Checksum
         enabletimeout = false
-        id = {B820AE06-06ED-49A1-B28D-040C1B12C574}
+        id = {AFD9CEEE-18F4-427B-889A-78137304AE62}
         impersonateusenetcredonly = false
         impersonateuser = false
         terminateontimeout = true
         timeoutlength = 2
-        as.applytoinput = True
-        as.usinginputvariable = True
-        as.inputvariable = Product
-        as.searchstring = " "
-        as.casesensitive = True
-        as.replaceall = True
+        as.file = %InstallationFile%
+        as.hashtype = sha256
+        as.checksumaction = Generate
+        as.checksumvariable = ProductSHA265Checksum
       end
       action.string.replace
       begin
@@ -206,6 +203,11 @@ begin
     name = ChocoAPIKey
     variablescope = vtProject
     variabletype = btString
+  end
+  variable
+  begin
+    name = InstallationFile
+    variablescope = vtProject
   end
   variable
   begin
