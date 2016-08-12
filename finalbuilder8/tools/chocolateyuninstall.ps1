@@ -28,5 +28,5 @@ if ($file -eq $null -or $file -eq '') {
 	
 #If we are still uninstalling then call chocolatey uninstall package commandlet to run our uninstaller
 if ($shouldUninstall) {
- Uninstall-ChocolateyPackage -PackageName $packageName -FileType $installerType -SilentArgs $silentArgs -validExitCodes $validExitCodes -File $file
+ Uninstall-ChocolateyPackage -PackageName $packageName -FileType $installerType -SilentArgs "$silentArgs" -validExitCodes $validExitCodes -File "$file"
 }
