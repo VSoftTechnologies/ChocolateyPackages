@@ -22,6 +22,21 @@ begin
         as.checksumaction = Generate
         as.checksumvariable = ProductSHA265Checksum
       end
+      action.string.trim
+      begin
+        actiontypeid = {0B328F21-BADE-4799-A8AD-9B63D3069FD8}
+        customactionname = "String Trimming"
+        enabletimeout = false
+        id = {15998D0A-FC37-4023-9EFC-B9632A2C490A}
+        impersonateusenetcredonly = false
+        impersonateuser = false
+        terminateontimeout = true
+        timeoutlength = 2
+        as.applytoinput = True
+        as.trimtype = All
+        as.usinginputvariable = True
+        as.inputvariable = ProductSHA265Checksum
+      end
       action.string.replace
       begin
         actiontypeid = {78526C82-A8E7-42B3-8C9D-1E229C79D915}
