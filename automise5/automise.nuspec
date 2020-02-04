@@ -13,7 +13,7 @@ Automise provides a graphical IDE and command line to create, debug, and run Win
 
 The package will download and install Automise with the default settings. A 30 day trail is included for each new installation after which a licence is required from our [store](https://www.finalbuilder.com/store).
 
-###Built In Actions
+### Built In Actions
 Over 350 actions are included for common Windows tasks. Notiable groups of these actions include;
 
  * Logic - If..Then, Try..Catch..Finally, Switch, While, Iterator, and Async
@@ -27,10 +27,10 @@ Over 350 actions are included for common Windows tasks. Notiable groups of these
  * Upload &amp; download -  Web Deploy, EC2, IIS, FTP, and SFTP
  * Configuration - Active Directory, .Net, HyperV, VWWare, XML, Windows OS, and IIS
 
-###Custom Scripting
+### Custom Scripting
 All actions provide customisation through settings as well as scripting events. These events allow custom scripted behavior to be performed. Supported languages for scripts are JScript, VBScript, PowerShell, and IronPython.
 
-###Custom Actions - Action Studio
+### Custom Actions - Action Studio
 Custom actions are used for large or complex custom scripting requirements. These custom actions can be backed by scripting logic or C# implementations. Custom action styles that can be written include;
 
  * Standard Actions - Simple actions that don't call an external tool. 
