@@ -54,6 +54,7 @@ begin
         as.searchstring = " "
         as.casesensitive = True
         as.replaceall = True
+        as.failifnotfound = False
       end
       action.comment
       begin
@@ -189,6 +190,7 @@ begin
           as.searchstring = -
           as.casesensitive = True
           as.replaceall = False
+          as.failifnotfound = False
         end
         action.chocolatey.push
         begin
@@ -233,6 +235,7 @@ begin
   end
   variable
   begin
+    canonicalizepath = true
     defaultvalue = %FBPROJECTDIR%\\..\\%Product%%ProductMajorVer%\\
     ismacro = true
     name = ProductDir
