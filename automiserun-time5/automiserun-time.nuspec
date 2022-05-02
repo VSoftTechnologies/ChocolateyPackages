@@ -45,7 +45,9 @@ Release notes are located at [Automise Version History](https://www.finalbuilder
     <copyright>VSoft Technologies Pty. Ltd. 1997-Present</copyright>
     <licenseUrl>https://www.finalbuilder.com/finalbuilder/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>https://cdn.rawgit.com/VSoftTechnologies/cdn-images/v8/Automise-Icon-256.png</iconUrl>-->
+	<iconUrl>https://raw.githubusercontent.com/VSoftTechnologies/cdn-images/master/automise-Icon-256.png</iconUrl>
+	<docsUrl>https://wiki.finalbuilder.com/</docsUrl>
+	<packageSourceUrl>https://github.com/VSoftTechnologies/ChocolateyPackages/blob/master/automiserun-time5/automiserun-time.nuspec</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -43,7 +43,9 @@ Custom actions are used for large or complex custom scripting requirements. Thes
     <copyright>VSoft Technologies Pty. Ltd. 1997-Present</copyright>
     <licenseUrl>https://www.finalbuilder.com/finalbuilder/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/VSoftTechnologies/cdn-images/v8/FinalBuilder-Icon-256.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/VSoftTechnologies/cdn-images/master/FinalBuilder-Icon-256.png</iconUrl>
+	<docsUrl>https://wiki.finalbuilder.com/</docsUrl>
+	<packageSourceUrl>https://github.com/VSoftTechnologies/ChocolateyPackages/blob/master/finalbuilder8/finalbuilder.nuspec</packageSourceUrl>	
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
