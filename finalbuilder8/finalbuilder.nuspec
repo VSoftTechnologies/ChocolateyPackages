@@ -47,7 +47,7 @@ Custom actions are used for large or complex custom scripting requirements. Thes
 	<docsUrl>https://wiki.finalbuilder.com/</docsUrl>
 	<packageSourceUrl>https://github.com/VSoftTechnologies/ChocolateyPackages/blob/master/finalbuilder8/finalbuilder.nuspec</packageSourceUrl>	
 	<dependencies>
-		<dependency id="netfx-4.7.2<" version="4.7.2.0" />
+		<dependency id="netfx-4.7.2" version="4.7.2.0" />
 	</dependencies>
   </metadata>
   <files>
